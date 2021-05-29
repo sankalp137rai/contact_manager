@@ -38,7 +38,7 @@ function AddContacts() {
 			email: email,
 		};
 		axios
-			.post("http://localhost:5000/addContacts", contactDetails)
+			.post("https://git.heroku.com/fierce-shore-54445.git/addContacts", contactDetails)
 			.then(function (response) {
 				console.log(response);
 			})

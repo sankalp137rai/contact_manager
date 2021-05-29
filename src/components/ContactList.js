@@ -10,7 +10,7 @@ function ContactList(props) {
 
 	useEffect(() => {
 		let gettingContactList = async () => {
-			let response = await axios.get("http://localhost:5000/contactList");
+			let response = await axios.get("https://git.heroku.com/fierce-shore-54445.git/contactList");
 			// console.log(response);
 			setUserContactList(response.data);
 		};
