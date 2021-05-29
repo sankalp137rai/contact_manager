@@ -36,7 +36,7 @@ function UpdateContact(props) {
 		console.log("id: " + location.state.id);
 		async function getContact() {
 			let response = await axios.get(
-				"https://git.heroku.com/fierce-shore-54445.git/updateContact/getContact",
+				"https://fierce-shore-54445.herokuapp.com/updateContact/getContact",
 				{
 					params: {
 						id: location.state.id,
@@ -60,7 +60,7 @@ function UpdateContact(props) {
 		};
 
 		axios
-			.put("https://git.heroku.com/fierce-shore-54445.git/updateContact/update", contactDetails)
+			.put("https://fierce-shore-54445.herokuapp.com/updateContact/update", contactDetails)
 			.then(function (response) {
 				console.log(response);
 			})

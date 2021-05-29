@@ -90,7 +90,7 @@ const ContactCard = (props) => {
 							console.log("Deleted");
 							console.log(_id);
 							axios
-								.delete(`https://git.heroku.com/fierce-shore-54445.git/contactList/delete`, {
+								.delete(`https://fierce-shore-54445.herokuapp.com/contactList/delete`, {
 									data: { id: _id },
 									param: { id: _id },
 								})
