@@ -49,7 +49,7 @@ function UpdateContact(props) {
 			setEmail(response.data.email);
 		}
 		getContact();
-	},[]);
+	},[location.state.id]);
 
 	function submitForm() {
 		const contactDetails = {
