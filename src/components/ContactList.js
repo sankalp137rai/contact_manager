@@ -16,7 +16,7 @@ function ContactList(props) {
 		};
 
 		gettingContactList();
-	}, []);
+	});
 
 	const randerContactList = userContactList.map((contact, idx) => {
 		return <ContactCard contact={contact} key={idx} />;
